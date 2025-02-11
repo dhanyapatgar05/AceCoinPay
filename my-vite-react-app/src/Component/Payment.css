@@ -1,0 +1,113 @@
+.payment-header {
+    width: 50%;
+    padding: 24px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Header Section */
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .logo-text {
+    color: #333;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .timer {
+    display: flex;
+    gap: 4px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  /* Card Section */
+  .card-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .edit-option {
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    margin-right: 4px;
+  }
+  
+  .card-description {
+    font-size: 0.75rem;
+    color: gray;
+    margin-top: 4px;
+  }
+  
+  .card-display {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    background: #f8f8f8;
+  }
+  
+  .card-logo {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .card-number {
+    margin-left: 8px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .edit-icon-wrapper {
+    margin-left: auto;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
