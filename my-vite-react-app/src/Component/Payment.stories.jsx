@@ -2,10 +2,10 @@ import Payment from "./Payment";
 
 export default {
   title: "Component/Payment",
-  component: PaymentLeft,
+  component: Payment,
 };
 
-const Template = (args) => <PaymentLeft {...args} />;
+const Template = (args) => <Payment {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
