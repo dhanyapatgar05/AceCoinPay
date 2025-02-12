@@ -1,113 +1,262 @@
 .payment-header {
-    width: 50%;
-    padding: 24px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  width: 50%;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header Section */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-text {
+  color: #333;
+}
+
+.bold {
+  font-weight: bold;
+  color: rgb(117, 116, 116);
+}
+
+/* Timer Styling */
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timer-box {
+  background-color: #19223a;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+  min-width: 5px;
+  text-align: center;
+}
+
+.timer-separator {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #19223a;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: black;
+}
+
+.edit-option {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.edit-icon {
+  margin-right: 4px;
+}
+
+.card-description {
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* Card Number Section */
+.card-display {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  background: #f8f8f8;
+}
+
+.card-logo {
+  width: 40px;
+  height: 24px;
   
-  /* Header Section */
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}
+
+.card-number {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: rgb(117, 116, 116);
+  gap: 8px; /* Adds spacing between numbers */
+}
+
+.edit-icon-wrapper {
+  margin-left: auto;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* CVV Container */
+.cvv-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Left Side: Label & Description */
+.cvv-label {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+}
+
+.cvv-label label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+ 
+}
+
+.cvv-description {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Right Side: CVV Input Box */
+.cvv-input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.cvv-input-box input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 2px;
   
-  .logo-img {
-    width: 24px;
-    height: 24px;
-  }
+}
+
+/* CVV Icon */
+.cvv-icon {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Expiry Date Container */
+.expiry-container {
+  display: flex;
+  align-items: center; /* Align label and input boxes in one row */
+  justify-content: space-between; /* Pushes input boxes to the right */
+  gap: 10px;
+}
+
+/* Label and Description (Left Side) */
+.expiry-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
   
-  .logo-text {
-    color: #333;
-  }
+}
+
+.expiry-label label{
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
   
-  .bold {
-    font-weight: bold;
-  }
-  
-  .timer {
-    display: flex;
-    gap: 4px;
-    font-size: 1.25rem;
-    font-weight: bold;
-    background: black;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  
-  /* Card Section */
-  .card-section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .card-label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .edit-option {
-    display: flex;
-    align-items: center;
-    color: #007bff;
-    font-size: 0.875rem;
-    cursor: pointer;
-  }
-  
-  .edit-icon {
-    margin-right: 4px;
-  }
-  
-  .card-description {
-    font-size: 0.75rem;
-    color: gray;
-    margin-top: 4px;
-  }
-  
-  .card-display {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 8px;
-    background: #f8f8f8;
-  }
-  
-  .card-logo {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .card-number {
-    margin-left: 8px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-  
-  .edit-icon-wrapper {
-    margin-left: auto;
-    color: #007bff;
-    cursor: pointer;
-  }
-  
+}
+
+.expiry-description {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Expiry Input Box (Right Side) */
+.expiry-input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between inputs and separator */
+}
+
+/* Expiry Input Fields */
+.expiry-input-box input {
+  width: 150px;  /* Fixed width */
+  height: 40px; /* Fixed height */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+}
+
+/* Focus Effect */
+.expiry-input-box input:focus {
+  border-color: #4A90E2;
+}
+
+/* Expiry Separator */
+.expiry-separator {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+/* Year Input - Highlighted */
+#year {
+  border: 2px solid #4A90E2;
+  font-weight: bold;
+  color: #4A90E2;
+}
