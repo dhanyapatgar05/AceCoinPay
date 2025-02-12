@@ -1,13 +1,14 @@
 import React from "react";
-import { MdEdit } from "react-icons/md";
+import { MdEdit, MdOutlineVerified } from "react-icons/md";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { BsFillGrid3X3GapFill, BsGrid3X3Gap } from "react-icons/bs";
 import "./Payment.css";
 
 
-const Payment = () => {
+const PaymentLeft = () => {
   return (
-    <div className="payment-header">
+ 
+    <div className="payment-left">
       {/* Header Section */}
       <div className="header-top">
         <h2 className="logo">
@@ -74,20 +75,53 @@ const Payment = () => {
           </div>
         </div>
 
-
-
-       
-        <div className="input-group">
-          <label>Password</label>
-            <div className="input-box">
-              <input type="password" placeholder="Enter Password" />
-              <BsGrid3X3Gap className="input-icon" />
-            </div>
+        {/*Password section */}
+        <div className="password-container">
+          <div className="password-label">
+            <label htmlFor="password">Password</label>
+            <p className="password-discription">Enter your Dynamic Password</p>
+          </div>
+          <div className="password-input-box">
+            <input type="password" id="password" placeholder="•••••••••" maxLength="4" />
+            <BsFillGrid3X3GapFill  className="password-icon" />
+          </div>
         </div>
         <button className="pay-now-btn">Pay Now</button>
       </div>
     </div>
+    
+
+
+ 
   );
 };
 
-export default Payment;
+const PaymentRight = () => {
+  return (
+    <div className="payment-right">
+      <div className="card-container">
+        <div className="card">
+          <div className="card-chip"></div>
+          <div className="card-details">
+            <p className="card-holder">Jonathan Michael</p>
+            <p className="card-number">•••• 3456</p>
+            <p className="card-expiry">09/22</p>
+          </div>
+          <div className="card-logo"></div>
+        </div>
+      </div>
+      
+    </div>
+  );
+};
+
+const PaymentContainer = () => {
+  return (
+    <div className="payment-container">
+      <PaymentLeft />
+      <PaymentRight />
+    </div>
+  );
+};
+
+export default PaymentContainer;

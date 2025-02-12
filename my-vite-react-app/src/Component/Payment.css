@@ -1,13 +1,23 @@
-.payment-header {
+.payment-container {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  margin: 20px auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-left {
   width: 50%;
   padding: 24px;
   background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 
 /* Header Section */
 .header-top {
@@ -120,8 +130,8 @@
   font-size: 1rem;
   letter-spacing: 2px;
   font-weight: bold;
-  color: rgb(117, 116, 116);
-  gap: 8px; /* Adds spacing between numbers */
+  color: rgb(186, 185, 185);
+  gap: 8px; 
 }
 
 .edit-icon-wrapper {
@@ -139,7 +149,7 @@
   width: 100%;
 }
 
-/* Left Side: Label & Description */
+
 .cvv-label {
   display: flex;
   flex-direction: column;
@@ -159,7 +169,7 @@
   color: #888;
 }
 
-/* Right Side: CVV Input Box */
+
 .cvv-input-box {
   display: flex;
   align-items: center;
@@ -182,7 +192,7 @@
   
 }
 
-/* CVV Icon */
+
 .cvv-icon {
   color: #666;
   font-size: 1.2rem;
@@ -191,12 +201,12 @@
 /* Expiry Date Container */
 .expiry-container {
   display: flex;
-  align-items: center; /* Align label and input boxes in one row */
-  justify-content: space-between; /* Pushes input boxes to the right */
+  align-items: center; 
+  justify-content: space-between; 
   gap: 10px;
 }
 
-/* Label and Description (Left Side) */
+
 .expiry-label {
   display: flex;
   flex-direction: column;
@@ -217,17 +227,17 @@
   color: #888;
 }
 
-/* Expiry Input Box (Right Side) */
+
 .expiry-input-box {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between inputs and separator */
+  gap: 10px; 
 }
 
-/* Expiry Input Fields */
+
 .expiry-input-box input {
-  width: 150px;  /* Fixed width */
-  height: 40px; /* Fixed height */
+  width: 160px;  
+  height: 40px; 
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -238,12 +248,6 @@
   outline: none;
 }
 
-/* Focus Effect */
-.expiry-input-box input:focus {
-  border-color: #4A90E2;
-}
-
-/* Expiry Separator */
 .expiry-separator {
   font-size: 20px;
   font-weight: bold;
@@ -254,9 +258,94 @@
   width: 20px;
 }
 
-/* Year Input - Highlighted */
+
 #year {
   border: 2px solid #4A90E2;
   font-weight: bold;
   color: #4A90E2;
 }
+
+
+/* password Container */
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+
+.password-label {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  
+}
+
+.password-label label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+ 
+}
+
+.password-discription {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+
+.password-input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.password-input-box input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  
+}
+
+
+.password-icon {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+
+/* Payment Button */
+.pay-now-btn {
+  width: 100%;
+  background: #007bff; 
+  color: white;
+  font-size: 18px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+ }
+
+
+ /* Payment right section */
+ .payment-right {
+  width: 30%;
+  background: #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
