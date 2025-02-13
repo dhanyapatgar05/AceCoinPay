@@ -2,6 +2,9 @@ import React from "react";
 import { MdEdit, MdOutlineVerified } from "react-icons/md";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { BsFillGrid3X3GapFill, BsGrid3X3Gap } from "react-icons/bs";
+import { FaWifi } from "react-icons/fa";
+import { SiMastercard } from "react-icons/si";
+
 import "./Payment.css";
 
 
@@ -91,25 +94,8 @@ const Payment = () => {
         </div>
       </div>
       <div className="payment-right">
-        <div className="card-container">
-          <div className="payment-card">
-            <div className="card-header"></div>
-            <div className="card-body">
-              <div className="card-top">
-                <div className="chip"></div>
-                <div className="contactless"></div>
-              </div>
-              <div className="card-holder">Jonathon Micheal</div>
-              <div className="card-number">•••• 3456</div>
-              <div className="card-footer">
-                <span className="card-expiry">09/22</span>
-                <div className="card-logo mastercard"></div>
-              </div>
-            </div>
-          </div>
-        </div>
         
-
+         
       </div>
     </div>
   );
