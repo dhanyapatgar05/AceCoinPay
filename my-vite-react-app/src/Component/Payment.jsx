@@ -129,6 +129,7 @@ const Payment = () => {
               <span>VAT (20%)</span>
               <span className="bold">$100.00</span>
             </div>
+            <p className="line">---------------------------------------------</p>
             <div className="total-amount">
               <p>You have to Pay</p>
               <h2>549.99 USD</h2>
