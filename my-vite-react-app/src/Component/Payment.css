@@ -17,6 +17,7 @@
   padding: 24px;
   background: #fff;
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   gap: 0;
@@ -361,9 +362,10 @@
   background: #eef3f7;
   width: 250px;
   padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin-bottom: 40px;
 
 }
 
@@ -372,13 +374,14 @@
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 240px;
+  width: 200px;
   height: 140px;
   background: white;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  
   padding: 15px;
   text-align: left;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -411,7 +414,7 @@
 }
 
 .payment-summary {
-  margin-top: 110px;
+  margin-top: 120px;
   background: #eef3f7;
   padding: 5px;
   border-radius: 10xp;
