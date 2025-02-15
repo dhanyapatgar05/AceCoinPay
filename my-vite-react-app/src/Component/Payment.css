@@ -439,10 +439,14 @@
   font-size: 16px;
 }
 
-.total-amount {
+.total-amount p {
   margin-top: 15px;
+  
 }
 
+
 .total-amount h2 {
-  color: #171B27;
+  color: #2242a4;
+  
 }
+

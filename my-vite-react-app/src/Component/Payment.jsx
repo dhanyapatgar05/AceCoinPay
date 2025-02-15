@@ -7,6 +7,8 @@ import { SiMastercard } from "react-icons/si";
 import { FaApple } from "react-icons/fa";
 
 
+
+
 import "./Payment.css";
 
 
@@ -106,8 +108,9 @@ const Payment = () => {
               <p className="card-holder">Jonathon Michael</p>
               <p className="card-number">**** 3456</p>
               <p className="expiry-date">09/22</p>
+              
             </div>
-            <SiMastercard className="card-logo" />
+            <SiMastercard className="card-logo"/>
           </div>
           {/* Payment Summary */}
           <div className="payment-summary">
@@ -130,11 +133,11 @@ const Payment = () => {
               <span className="bold">$100.00</span>
             </div>
             <p className="line">---------------------------------------------</p>
-            <div className="total-amount">
-              <p>You have to Pay</p>
-              <h2>549.99 USD</h2>
-            </div>
-
+          </div>
+          <div className="total-amount">
+            <p>You have to Pay</p>
+            <h2>549.99 USD</h2>
+            
           </div>
       
         </div>
